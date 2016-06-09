@@ -19,7 +19,7 @@ public class SkripsiNurida {
      */
     public static void main(String[] args) throws SQLException {
         // TODO code application logic here
-        KoneksiDB connection = new KoneksiDB();
-        connection.getKoneksi();
+    //    KoneksiDB connection = new KoneksiDB();
+     //   connection.getKoneksi();
     }
 }

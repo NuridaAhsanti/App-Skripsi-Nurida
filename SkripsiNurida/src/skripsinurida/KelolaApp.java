@@ -4,6 +4,10 @@
  */
 package skripsinurida;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 
@@ -287,15 +291,25 @@ public class KelolaApp extends javax.swing.JFrame {
 
     private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSimpanActionPerformed
         // TODO add your handling code here:
-   String Kalimat = TAKel.getText().toLowerCase();
-   String Kata[] = Kalimat.split(" ");
-   String Head[] = {"Kata"};
-   Object Data[][] = new Object[1000][1];
-   for (int x=0; x<Kata.length; x++){
-       Data[x][0] = Kata[x];
-   }
-   model = new DefaultTableModel(Data,Head);
-        jTable1.setModel(model);  
+    String Kalimat = TAKel.getText().toLowerCase(); //koding case folding
+         String Kata[] = Kalimat.split(" ");  //pengenalan spasi untuk tokenisasi
+         String Head[] = {"Kata"};              // array kata untuk tokenisasi
+         Object Data[][] = new Object[1000][1]; // koding tokenisasi
+         KoneksiDB connection = new KoneksiDB();    //pemanggilan kelas KoneksiDB
+         try {
+             for (int x=0; x<Kata.length; x++){     // pengulangan untuk tokenisasi
+                Data[x][0] = Kata[x];               // koding tokenisasi
+                String query = " insert into kata(kata) values(?)";     //query insert data ke db
+                PreparedStatement preparedStmt = connection.getKoneksi().prepareStatement(query);   //koding membantu insert data ke db
+                preparedStmt.setString(1,Kata[x]);      //membantu query insert data ke db
+                preparedStmt.execute();                 //eksekusi insert data ke db
+             }
+              
+            } catch (SQLException ex) {
+                Logger.getLogger(CariJawaban.class.getName()).log(Level.SEVERE, null, ex);           
+             }
+         model = new DefaultTableModel(Data,Head); //definisi untuk memasukkan kata ke tabel
+         jTable1.setModel(model);               //struktur tabel
     }//GEN-LAST:event_BtnSimpanActionPerformed
 
     /**

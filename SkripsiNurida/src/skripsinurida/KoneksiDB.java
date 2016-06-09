@@ -7,37 +7,38 @@ package skripsinurida;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
 /**
  *
  * @author nury
  */
 public class KoneksiDB {
-    private Connection con;
-    private String driverName = "com.mysql.jdbc.Driver";
-    private String jdbc = "jdbc:mysql://";
-    private String host = "localhost:";
-    private String port = "3306/";
-    private String database = "skripsidb";
-    private String url = jdbc  + host + port + database;
-    private String username = "root";
-    private String passwaord = "";
-    
-    public Connection getKoneksi() throws SQLException{
-        if (con == null){
-        try{
-            Class.forName(driverName);
-            System.out.println("Driver Ditemukan");
-            try{
-                con = DriverManager.getConnection(url, username, passwaord);
-                System.out.println("Koneksi Database Sukses");
-            } catch (SQLException se){
-                System.out.println("Koneksi Database Gagal" + se);
-            }
-        } catch (ClassNotFoundException cnfe){
-            System.out.println("Driver tidak ditemukan, terjadi kesalahan pada:" + cnfe);
-            System.exit(0);
-        }
-        }
-    return con;
-}
+   private Connection connect;  
+   private String driverName = "com.mysql.jdbc.Driver"; // Driver Untuk Koneksi Ke MySQL  
+   private String jdbc = "jdbc:mysql://";  
+   private String host = "localhost:"; // Bisa Menggunakan IP Anda, Cnth : 192.168.100.100  
+   private String port = "3306/"; // Port ini port MySQL  
+   private String database = "skripsidb"; // Ini Database yang akan digunakan  
+   private String url = jdbc + host + port + database;  
+   private String username = "root"; // username default mysql  
+   private String password = "";  
+   public Connection getKoneksi() throws SQLException {  
+     if (connect == null) {  
+       try {  
+         Class.forName(driverName);  
+         System.out.println("Class Driver Ditemukan");  
+         try {  
+           connect = DriverManager.getConnection(url, username, password);  
+           System.out.println("Koneksi Database Sukses");  
+         } catch (SQLException se) {  
+           System.out.println("Koneksi Database Gagal : " + se);  
+           System.exit(0);  
+         }  
+       } catch (ClassNotFoundException cnfe) {  
+         System.out.println("Class Driver Tidak Ditemukan, Terjadi Kesalahan Pada : " + cnfe);  
+         System.exit(0);  
+       }  
+     }  
+     return connect;  
+   }  
 }

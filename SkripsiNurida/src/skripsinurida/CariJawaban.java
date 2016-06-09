@@ -5,7 +5,13 @@
 package skripsinurida;
 
 import java.awt.Frame;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.StringTokenizer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 
@@ -64,7 +70,6 @@ public class CariJawaban extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(750, 550));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(750, 550));
 
@@ -375,11 +380,22 @@ public class CariJawaban extends javax.swing.JFrame {
          String Kata[] = Kalimat.split(" ");
          String Head[] = {"Kata"};
          Object Data[][] = new Object[1000][1];
-         for (int x=0; x<Kata.length; x++){
-             Data[x][0] = Kata[x];
-         }
+         KoneksiDB connection = new KoneksiDB();
+         try {
+             for (int x=0; x<Kata.length; x++){
+                Data[x][0] = Kata[x];
+                String query = "select * from kata where kata= ?";
+                PreparedStatement preparedStmt = connection.getKoneksi().prepareStatement(query);
+                preparedStmt.setString(1,Kata[x]);
+                preparedStmt.execute();
+             }
+              
+            } catch (SQLException ex) {
+                Logger.getLogger(CariJawaban.class.getName()).log(Level.SEVERE, null, ex);           
+             }
          model = new DefaultTableModel(Data,Head);
          jTable1.setModel(model);
+         
     }//GEN-LAST:event_BtnCariActionPerformed
 
     private void BtnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnNextActionPerformed
