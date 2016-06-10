@@ -34,6 +34,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         BtnCariJawaban = new javax.swing.JButton();
         BtnKelola = new javax.swing.JButton();
+        BtnLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,6 +60,14 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        BtnLogin.setFont(new java.awt.Font("Tempus Sans ITC", 0, 14)); // NOI18N
+        BtnLogin.setText("Log In");
+        BtnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnLoginActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -75,6 +84,10 @@ public class Menu extends javax.swing.JFrame {
                         .addGap(123, 123, 123)
                         .addComponent(BtnKelola)))
                 .addContainerGap(36, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(BtnLogin)
+                .addGap(146, 146, 146))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,7 +98,9 @@ public class Menu extends javax.swing.JFrame {
                 .addComponent(BtnCariJawaban)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(BtnKelola)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnLogin)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -111,6 +126,11 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         new CariJawaban().show();
     }//GEN-LAST:event_BtnCariJawabanActionPerformed
+
+    private void BtnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLoginActionPerformed
+        // TODO add your handling code here:
+        new Login().show();
+    }//GEN-LAST:event_BtnLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -151,6 +171,7 @@ public class Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnCariJawaban;
     private javax.swing.JButton BtnKelola;
+    private javax.swing.JButton BtnLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
