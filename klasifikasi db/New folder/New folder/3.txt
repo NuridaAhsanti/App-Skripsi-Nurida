@@ -1,0 +1,11 @@
+Fahrenheit Celcius
+-
+pengulangan
+real F, C; Int x, y, step
+F, C, x, y, step
+Program untuk mencetak tabel Fahrenheit-Celcius dari x sampai y dengan kenaikan
+sebesar step.Masukan program ini adalah suhu awal, suhu akhir, step dan 
+keluarannya adalah tabel konversi suhu dalam C dan F
+
+
+buku algoritma hal.40/46

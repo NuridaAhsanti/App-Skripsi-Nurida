@@ -1,0 +1,9 @@
+Lama Bekerja
+
+Runtunan
+iLama = iKeluar - iMasuk
+int iLama, iKeluar, iMasuk
+iLama, iKeluar, iMasuk
+
+Tulis program untuk menentukan lama bekerja seorang pegawai, jika jam masuk dan jam pulang diinput.
+Catatan: jam berupa angka 1-12, dan seorang pegawai bekerja kurang dari 12 jam.

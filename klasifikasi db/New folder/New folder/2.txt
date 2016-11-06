@@ -1,0 +1,12 @@
+Euclidean
+-
+Pengulangan
+Int m, n, r
+m, n, r
+Program untuk mencari gcd dari dua buah bilangan bulat tak-negatif m dan n 
+(m >= n). Gcd dari m dan n adalah bilangan bulat positif terbesar yang habis 
+membagi m dan n.
+
+
+
+buku algoritma hal.21

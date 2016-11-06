@@ -1,0 +1,13 @@
+Nilai Ujian Mahasiswa
+pengulangan
+Nmaks =1000
+Int []array ; Int j, k, temp, N, Imaks;
+array , j, k, temp, N, Imaks;
+
+Program melakukan pengurutan sekumpulan nilai ujian mahasiswa. 
+Data nilai ujian mahasiswa dibaca dari keyboard, lalu diurutkan dari kecil 
+ke besar dan akhirnya hasil pengurutan ditampilkan ke monitor.
+
+
+
+buku algoritma hal.13-14
