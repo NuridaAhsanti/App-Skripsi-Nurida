@@ -1,0 +1,39 @@
+Gaji Karyawan Mingguan
+Runtunan
+gol1 = 3000;
+gol2 = 3500;
+gol3 = 4000;
+gol4 = 5000
+
+int iGol, iGaji, iUpah, iJam
+
+iGol, iGaji, iUpah, iJam
+
+Bila seorang karyawan bekerja kurang atau sama dengan 40 jam per minggu, akan dihitung dengan upah per jam
+seperti di atas, tetapi apabila bekerja lebih dari 40 jam, maka lebihnya akan dihitung sebagai lembur dengan upah
+per jam 1,5 kali upah biasa.
+Tulis algoritma untuk menghitung gaji mingguan karyawan, bila golongan dan jam kerja diinput dari keyboard.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Rambat cahaya
+Pengulangan
+jarak=cahaya*detik
+double jarak, cahaya, detik 	
+jarak, cahaya, detik.
+
+Untuk menghitung, cepat rambat cahaya dalam ilmu fisika diketahui dengan rumus sebagai berikut:
+jarak=cahaya*detik.
+Diketahui satuan ini dalam kilometer, selesaikanlah dalam algoritma dan java masalah tersebut!
+
+-----------------------------------------------------------------------------------------------------
+
+Euclidean 	
+Pengulangan 	
+- 	
+Int m, n, r 	
+m, n, r
+
+Program untuk mencari gcd dari dua buah bilangan bulat tak-negatif m dan n
+(m >= n). Gcd dari m dan n adalah bilangan bulat positif terbesar yang habis
+membagi m dan n.

@@ -1,0 +1,972 @@
+1.
+Lama Bekerja
+
+Pemilihan
+iLama = iKeluar - iMasuk
+int iLama, iKeluar, iMasuk
+iLama, iKeluar, iMasuk
+
+Tulis program untuk menentukan lama bekerja seorang pegawai, jika jam masuk dan jam pulang diinput.
+Catatan: jam berupa angka 1-12, dan seorang pegawai bekerja kurang dari 12 jam.
+
+--------------------------------------------------------------------------------------
+2.
+Biaya Parkir
+ 	
+Pemilihan 	
+iBiaya =2000 	
+int iMasuk, iKeluar, iLama; long int iBiaya 	
+iMasuk, iKeluar, iLama, iBiaya
+
+Tulis program untuk menentukan biaya parkir yang dihitung berdasarkan lama parkir.
+Lama parkir dihitung dari selisih jam masuk dan jam keluar diinput. 
+Biaya parkir 2 jam pertama 2000, perjam berikutnya 500.
+------------------------------------------------------------------------------------
+3.
+Penggabungan Resistor 	
+
+Pemilihan 	
+Seri:Rgab=R1+R2+R3;Paralel:1/Rgab=1/R1+1/R2+1/R3 	
+int iPilihan;float fR1, fR2, fR3;float fResPengganti 	
+iPilihan, fR1, fR2, fR3, fResPengganti
+
+Tulis program untuk menghitung resistor pengganti dari 3 buah resistor yang disusun 
+secara seri atau paralel.
+Rumus untuk resistor pengganti sbb:
+Seri: Rgab = R1 + R2 + R3
+Paralel :1/Rgab= 1/R1+1/R2+1/R3
+Besar R1, R2 dan R3 serta jenis penyusunan (seri/paralel) diinput oleh user.
+
+----------------------------------------------------------------------------------
+4.
+Nilai Ujian Mahasiswa
+
+pengulangan
+Nmaks =1000
+Int []array ; Int j, k, temp, N, Imaks;
+array , j, k, temp, N, Imaks;
+
+Program melakukan pengurutan sekumpulan nilai ujian mahasiswa. 
+Data nilai ujian mahasiswa dibaca dari keyboard, lalu diurutkan dari kecil 
+ke besar dan akhirnya hasil pengurutan ditampilkan ke monitor.
+
+
+buku algoritma hal.13-14
+
+-----------------------------------------------------------------------------------
+5.
+Fahrenheit Celcius
+
+pengulangan
+-
+real F, C; Int x, y, step
+F, C, x, y, step
+Program untuk mencetak tabel Fahrenheit-Celcius dari x sampai y dengan kenaikkan
+sebesar step.Masukkan program ini adalah suhu awal, suhu akhir, step dan 
+keluarannya adalah tabel konversi suhu dalam C dan F
+
+
+buku algoritma hal.40/46
+------------------------------------------------------------------------------------
+6.
+Gaji Karyawan Mingguan 	
+
+Runtunan 	
+gol1 = 3000;gol2 = 3500;gol3 = 4000;gol4 = 5000 	
+int iGol, iGaji, iUpah, iJam 	
+iGol, iGaji, iUpah, iJam
+
+Bila seorang karyawan bekerja kurang atau sama dengan 40 jam per minggu, akan dihitung dengan upah per jam
+seperti di atas, tetapi apabila bekerja lebih dari 40 jam, maka lebihnya akan dihitung sebagai lembur dengan upah
+per jam 1,5 kali upah biasa.
+Tulis algoritma untuk menghitung gaji mingguan karyawan, bila golongan dan jam kerja diinput dari keyboard.
+---------------------------------------------------------------------------------------
+7.
+Rambat cahaya 	
+
+Pengulangan 	
+jarak=cahaya*detik 	
+double jarak,cahaya, detik 	
+jarak, cahaya, detik.
+
+Untuk menghitung, cepat rambat cahaya dalam ilmu fisika diketahui dengan rumus sebagai berikut:
+jarak=cahaya*detik.
+Diketahui satuan ini dalam kilometer, selesaikanlah dalam algoritma dan java masalah tersebut!
+--------------------------------------------------------------------------------------
+8.
+Euclidean
+
+Pengulangan
+-
+Int m, n, r
+m, n, r
+
+Program untuk mencari gcd dari dua buah bilangan bulat tak-negatif m dan n 
+(m >= n). Gcd dari m dan n adalah bilangan bulat positif terbesar yang habis 
+membagi m dan n.
+
+buku algoritma hal.21
+
+-------------------------------------------------------------------------------------
+9.
+Harga Barang 
+
+Pemilihan
+A=10%;B=15%;C=20%;
+int iKode, iDiskon; Char cJenis; long int iHarga,iHDiskon
+iKode, iDiskon, cJenis, iHarga, iHDiskon
+
+Buatlah program untuk menyelesaikan masalah berikut :
+Program akan menerima masukan berupa kode, jenis dan harga, dengan jenis 
+adalah "A", "B", dan "C". Untuk setiap jenis, masing-masing akan diberikan 
+diskon sebesar 10% untuk A, 15% untuk B, dan 20% untuk C. Program akan menghitung 
+berapa harga setelah didiskon.
+
+-------------------------------------------------------------------------------------
+10.
+Luas bangun
+
+Runtunan
+-
+int p,l,Luas
+p,l,Luas
+
+Flowchart untuk menghitung luas bangun.Buatlah flowchart untuk menghitung: 
+a. volume balok 
+b. luas lingkaran 
+
+------------------------------------------------------------------------------------
+11.***************
+nilai terbesar 2 bilangan
+
+pemilihan
+-
+int x,y
+x,y
+
+tentukan nilai terbesar dari dua buah bilangan bulat, x dan y (andaikan x != y)
+
+buku algoritma hal.29
+------------------------------------------------------------------------------------
+12.***************
+genap ganjil
+
+pemilihan
+-
+int x
+x
+
+tentukan apakah bilangan bulat x merupakan bilangan genap atau ganjil
+
+buku algoritma hal.30
+
+---------------------------------------------------------------------------------
+13.***************
+nilai terbesar 3 bilangan
+
+pemilihan
+-
+int x,y,z
+x,y,z
+
+tentukan nilai terbesar dari tiga buah bilangan: x, y dan z
+
+
+buku algoritma hal.30
+----------------------------------------------------------------------
+14.***************
+cetak Hello word
+
+runtunan
+-
+-
+-
+
+program untuk mencetak "Hello word". masukkan program ini tidak ada, 
+keluarannya adalah tulisan "Hello word" tercetak dilayar
+
+buku algoritma hal.48
+-----------------------------------------------------------------------------
+15.***************
+cetak Halo nama
+
+runtunan
+-
+string nama
+nama
+
+tuliskan algoritma yang membaca nama seseorang dari keyboard, lalu menampilkan ucapan
+"Halo" diikuti dengan nama orang tersebut
+
+buku algoritma hal.93
+---------------------------------------------------------------------------------
+16.***************
+Pertukaran nilai A dan B
+
+runtunan
+-
+int A, B, C
+A, B, C
+
+tuliskan algoritma yang membaca dua buah nilai-nilai untuk peubah A dan B, 
+lalu mempertukarkan nilai kedua peubah tersebut. misalnya sebelum pertukaran nilai A = 8,
+nilai B= 5, maka setelah pertukaran, nilai A=5 dan nilai B=8 
+
+buku algoritma hal.93
+--------------------------------------------------------------------------------
+17.***************
+Luas empat persegi panjang
+
+runtunan
+-
+Float panjang, lebar, luas
+panjang, lebar, luas
+
+tulislah algoritma yang membaca panjang dan lebar dari sebuah empat persegi panjang,
+lalu menghitung luas segiempat yang berbentuk empat persegi panjang. luas segiempat adalah
+panjang dikali lebar. luas segiempat dicetak ke piranti keluaran.
+
+buku algoritma hal.96
+--------------------------------------------------------------------------------
+18.***************
+Komisi Salesman
+
+runtunan
+-
+String NamaSalesman; Float NilaiPenjualan, komisi
+NamaSalesman, NilaiPenjualan, komisi
+
+tulislah algoritma untuk menghitung komisi yang diterima salesman berdasarkan 
+nilai penjualan yang dicapainya. salesman itu mendapat komisi 5% dari hasil penjualannya.
+algoritma menerima data nama salesman dan nilai penjualan yang dicapainya, menghitung komisi,
+lalu mencetak nama salesman dan besar komisi yang diperolehnya.
+
+buku algoritma hal.97
+----------------------------------------------------------------------------------
+19.***************
+Gaji Bersih Karyawan
+
+runtunan
+PersenTunjangan = 0,2; PersenPajak = 0,15
+String NamaKaryawan; Float GajiPokok, tunjangan, pajak, GajiBersih
+NamaKaryawan, GajiPokok, tunjangan, pajak, GajiBersih
+
+tulislah algoritma yang membaca nama karyawan dan gaji pokok bulanannya 
+dan menghitung gaji bersih karyawan tersebut. gaji bersih yang diterima pegawai adalah:
+gaji bersih = gaji pokok + tunjangan - pajak
+tunjangan karyawan dihitung 20% dari gaji pokok, sedangkan pajak adalah 15% dari
+gaji pokok ditambah tunjangan. nama karyawan dan gaji bersihnya dicetak ke piranti keluaran.
+
+buku algoritma hal.98
+--------------------------------------------------------------------------------
+20.***************
+Titik tengah
+
+runtunan
+p1 = (x1, y1);p2 = (x2, y2)
+Float x,y
+x,y
+
+tulislah algoritma yang membaca dua buah titik p1 = (x1, y1) dan p2 = (x2, y2), lalu 
+menghitung titik tengah dari p1 dan p2. 
+titik tengah dari dua p1 dan p2 adalah p3 = (x3, y3) yang dihitung dengan rumus
+
+buku algoritma hal.98
+-----------------------------------------------------------------------------------
+21.***************
+Konversi ke detik
+
+runtunan
+-
+int hh, mm, ss, TotalDetik, J
+hh, mm, ss, TotalDetik, J
+
+seorang pelari maraton menempuh waktu lari yang diukur dalam satuan jam, menit dan detik
+tulislah algoritma yang membaca waktu tempuh seorang pelari maraton, 
+lalu mengonversi waktu tempuh tersebut kedalam detik. ingatlah bahwa
+1 menit = 60 detik
+1 jam = 3600 detik
+misalnya, jika waktu tempuh seorang pelari maraton adalah 1 jam, 5 menit 40 detik. dalam detik, 
+waktu tempuh seluruhnya adalah (1*3600) + (5*60) + 40 = 3940 detik.
+
+buku algoritma hal.99
+---------------------------------------------------------------------------------
+22.***************
+Konversi detik ke JamMenitDetik
+runtunan
+-
+int hh, mm, ss, TotalDetik, J, sisa
+hh, mm, ss, TotalDetik, J, sisa
+
+tulislah algoritma yang membaca lama sebuah percakapan telepon dalam satuan detik, 
+lalu mengonversinya ke dalam jam, menit, dan detik. sebagai contoh, misalkan lama percakapan adalah
+4000 detik, maka 4000 detik = 1 jam + 6 menit + 40 detik, ini diperoleh dengan cara:
+4000 div 3600 = 1(jam)
+4000 mod 3600 = 400(sisa detik)
+400 div 60 = 6(menit)
+400 mod 60 = 40(detik)
+
+buku algoritma hal.101
+---------------------------------------------------------------------------------
+23.***************
+Selisih Waktu
+
+runtunan
+BiayaPerPulsa = 150; LamaPulsa = 5
+int hh, mm, ss, J1, J2, J3, TotalDetik1, TotalDetik2, SelisihDetik, sisa
+hh, mm, ss, J1, J2, J3, TotalDetik1, TotalDetik2,SelisihDetik, sisa
+
+tulislah algoritma yang membaca dua buah jam, yang pertama waktu J1(hh:mm:ss)
+dan waktu kedua J2(hh:mm:ss) dengan syarat J2>J1, lalu menghitung selisih jam(durasi)
+dari J1 sampai J2.
+
+buku algoritma hal.101
+----------------------------------------------------------------------------------
+24.***************
+Wartel
+
+runtunan
+BiayaPerPulsa = 150; LamaPulsa = 5
+int hh, mm, ss, J1, J2, J3, TotalDetik1, TotalDetik2, sisa, durasi; Float pulsa, biaya
+hh, mm, ss, J1, J2, J3, TotalDetik1, TotalDetik2, sisa, durasi
+
+misalkan seorang penelepon di warung telekomunikasi memulai percakapan pada pukul J1
+dan selesai pada pukul J2. andaikan 1 pulsa = 5 detik dan biaya per pulsa Rp 150,
+tulislah algoritma untuk menghitung lama percakapan (dalam jam-menit-detik) dan
+biaya yang harus dibayar penelpon. untuk menyederhanakan masalah, andaikanlah wartel itu
+tutup tepat pada pukul 0:0:0 malam.
+
+buku algoritma hal.101
+----------------------------------------------------------------------------------
+25.***************
+Genap
+
+pemilihan
+-
+int x
+x
+
+buatlah algoritma yang membaca sebuah bilangan bulat, lalu mencetak pesan "genap"
+jika bilangan tersebut adalah genap.
+
+buku algoritma hal.115
+---------------------------------------------------------------------------------
+26.***************
+Huruf Vokal
+
+pemilihan
+-
+char c
+c
+
+tulislah algoritma yang membaca sebuah karakter, lalu menuliskan pesan "huruf hidup"
+jika karakter tersebut merupakan salah satu dari huruf vokal.
+
+buku algoritma hal.115
+-----------------------------------------------------------------------------------
+27.***************
+Nilai Mutlak
+
+pemilihan
+-
+Float x
+x
+
+di dalam matematika kita mengenal nilai mutlak (absolute value). untuk sembarang 
+bilangan riil x, maka nilai mutlak, dilambangkan |x|, adalah besaran x tanpa 
+memperhitungkan tandanya. nilai mutlak selalu positif. jadi, jika x bernilai negatif, 
+maka nilai mutlak dari x diperoleh dengan mengalikannya dengan negatif. buatlah algoritma 
+yang membaca sebuah bilangan riil lalu menentukan nilai mutlaknya.
+
+buku algoritma hal.116
+----------------------------------------------------------------------------------
+28.***************
+Genap Ganjil
+
+pemilihan
+-
+int x
+x
+
+tulislah algoritma yang membaca sebuah bilangan bulat, lalu menuliskan pesan "genap"
+jika bilangan tersebut adalah genap, atau "ganjil" jika bilangan tersebut adalah ganjil
+
+buku algoritma hal.117
+---------------------------------------------------------------------------------
+29.***************
+Maksimum
+
+pemilihan
+-
+int A,B
+A,B
+
+Buatlah algoritma yang membaca dua buah bilangan bulat, 
+lalu menentukan bilangan yang terbesar.
+
+buku algoritma hal.118
+-----------------------------------------------------------------------------------
+30.***************
+Maksimum3
+
+pemilihan
+-
+int A,B,C
+A,B,C
+
+tulislah algoritma yang membaca tiga buah bilangan bulat, lalu menentukan dari ketiga 
+bilangan itu yang terbesar!
+
+buku algoritma hal.119
+--------------------------------------------------------------------------------------
+31.***************
+Upah Karyawan
+
+pemilihan
+
+JamNormal = 48; UpahPerJam = 2000; Upah lembur =3000
+String nama; Int JJK; Float lembur,upah
+nama; Int JJK; Float lembur,upah
+
+karyawan honorer di PT "ABC" digaji berdasarkan jumlah jam kerjanya selama satu minggu.
+upah per jam misalkan Rp 2000,00.
+bila jumlah jam kerja lebih besar dari 48 jam, maka sisanya sebagai jam lembur. 
+upah lembur misalkan Rp 3000,00/jam. tulislah algoritma yang membaca jumlah jam kerja
+seorang karyawan selama satu minggu, lalu menentukan upah mingguannya.
+
+buku algoritma hal.121
+---------------------------------------------------------------------------------
+32.***************
+Tahun Kabisat
+
+pemilihan
+-
+Int tahun
+tahun
+
+buatlah algoritma yang membaca angka tahun masehi dari keyboard, 
+lalu menentukan apakah tahun tersebut merupakan tahun kabisat. secara sederhana,
+tahun kabisat adalah tahun yang habis dibagi dengan 4. pada tahun kabisat, bulan
+februari berjumlah 29 hari.
+
+buku algoritma hal.122
+-----------------------------------------------------------------------------------
+33.***************
+Jenis Bilangan Bulat
+
+pemilihan
+-
+int x
+x
+
+tulislah algoritma yang membaca sebuah buah bilangan bulat, lalu menentukan apakah
+bilangan tersebut positif, negatif atau nol.
+
+buku algoritma hal.125
+----------------------------------------------------------------------------------
+34.***************
+Wujud Air
+
+pemilihan
+-
+Float T
+T
+
+tulislah algoritma yang membaca temperatur air, T, (dalam satuan derajat Celcius)
+pada tekanan normal, lalu menentukan apakah wujud air tersebut dalam keadaan padat
+(T<=0 derajat celcius), cair(0< T<100), atau gas (T>100). 
+
+buku algoritma hal.126
+---------------------------------------------------------------------------------
+35.***************
+Kuadran Titik
+
+pemilihan
+-
+Float x,y
+x,y
+
+buatlah algoritma yang membaca sebuah titik P(x,y) dibidang kartesian, lalu menentukan
+di kuadran mana letak titik tersebut.
+
+buku algoritma hal.126
+-----------------------------------------------------------------------------------
+36.***************
+Upah Karyawan
+
+pemilihan
+JamKerjaNormal = 48; UpahLembur = 3000
+String Nama; char gol; Int JJK, JamLembur; Float UpahPerJam, UpahTotal
+Nama, gol, JJK, JamLembur, UpahPerJam, UpahTotal
+
+misalkan karyawan PT "ABC" dikelompokkan berdasarkan golongannya. upah perjam tiap karyawan
+bergatung pada golongannya. jumlah jam kerja yang normal selama seminggu adalah 48 jam.
+kelebihan jam kerja dianggap lembur dengan upah lembur adalah 3000/jam untuk semua golongan
+karyawan.buatlah algoritma yang membaca nama karyawan dan jumlah jam kerjanya selama seminggu 
+lalu menghitung gaji mingguannya.
+
+buku algoritma hal.127
+--------------------------------------------------------------------------------------
+37.***************
+Indeks Nilai Ujian
+
+pemilihan
+-
+Float nilai; char indeks
+nilai, indeks
+
+Indeks nilai mahasiswa ditentukan berdasarkan nilai ujian yang diraihnya. buatlah algoritma
+yang membaca nilai ujian seorang mahasiswa, lalu menentukan indeks nilainya, kemudian mencetak 
+nilai dan indeksnya ke keyboard.
+
+buku algoritma hal.129
+---------------------------------------------------------------------------------
+38.***************
+Konversi angka ke teks
+
+pemilihan
+-
+Float nilai; char indeks
+nilai, indeks
+
+buatlah algoritma yang membaca sebuah bilangan bulat yang nilainya terletak antara 1 sampai 4,
+lalu mencetak tulisan angka tersebut. misalkan bila dibaca angka 1, maka terletak tulisan 
+"satu", bila dibaca 2, maka terletak dilayar tulisan "dua", demikian seterusnya. 
+jika angka yang dimasukkan selain 1 sampai 4, tuliskan pesan bahwa angka yang dimasukkan 
+salah.
+ 
+buku algoritma hal.131
+-----------------------------------------------------------------------------------
+39.***************
+Nama Bulan
+
+pemilihan
+-
+Int Nomor_bulan
+Nomor_bulan
+
+buatlah algoritma yang membaca nomor bulan (integer), lalu menuliskan nama bulan sesuai
+angka bulanya. misalnya jika dibaca bulan 8, maka tercetak "Agustus"
+
+buku algoritma hal.132
+----------------------------------------------------------------------------------
+40.***************
+Jam Berikutnya
+
+pemilihan
+-
+Int hh, mm, ss, TotalDetik, SisaDetik
+hh, mm, ss, TotalDetik, SisaDetik
+
+buatlah algoritma yang membacasebuah jam(hh:mm:ss), lalu menentukan jam yang baru setelah 
+jam yang lama ditambah (increment) satu detik.
+
+buku algoritma hal.134
+---------------------------------------------------------------------------------
+41.***************
+Kalkulator Sederhana
+
+pemilihan
+-
+Int op1, op2; char oprt
+op1, op2, oprt
+
+simulasikan sebuah kalkulator sederhana untuk melakukan operasi aritmetika sebagai berikut:
+dibaca operand 1, operator, dan operand 2. dan cetak hasilnya.
+
+buku algoritma hal.135
+-----------------------------------------------------------------------------------
+42.***************
+Simulasi Menu Program
+
+pemilihan
+-
+Int NomorMenu
+NomorMenu
+
+konstruksi case sering digunakan dalam memilih menu program. program menawarkan sejumlah 
+menu. pengguna cukup mengetikkan nomor menu yang diinginkan. setiap kali nomor menu dipilih, 
+maka prosedur yang berasosiasi dengan nomor tesebut dieksekusi. buatlah algoritma yang 
+mencetak menu tersebut dan membaca nomor pilihan menu
+
+buku algoritma hal.137
+--------------------------------------------------------------------------------------
+43.***************
+Jumlah Hari
+
+pemilihan
+-
+Int nomor_bulan, tahun, jumlah_hari
+nomor_bulan, tahun, jumlah_hari
+
+buatlah algoritma yang membaca nomor bulan dan tahun, lalu menuliskan jumlah hari dalam 
+bulan tersebut. misalnya jika dibaca bulan 8 (bulan agustus), maka jumlah harinya adalah 31.
+
+buku algoritma hal.139
+--------------------------------------------------------------------------------------
+44.***************
+Cetak Banyak Hello World
+
+pengulangan
+-
+Int i
+i
+
+misalkan kita ingin mencetak pesan "Hello, world" sebanyak 10 kali, maka algoritmanya 
+adalah:
+
+buku algoritma hal.157
+---------------------------------------------------------------------------------
+45.***************
+Cetak 1 sampai 10
+
+pengulangan
+-
+Int i
+i
+
+misalkan kita ingin mencetak angka 1,2,...8 di layar, dengan satu angka pada setiap baris.
+
+buku algoritma hal.158
+-----------------------------------------------------------------------------------
+46.***************
+Cetak 1 sampai N
+
+pengulangan
+-
+Int N,i
+N,i
+
+misalkan kita ingin mencetak angka 1,2,...N, yang dalam hal ini nilai N dibaca terlebih 
+dahulu.
+
+buku algoritma hal.159
+----------------------------------------------------------------------------------
+47.***************
+Penjumlahan Deret
+
+pengulangan
+-
+Int i
+i
+
+misalkan kita ingin menghitung jumlah angka-angka dari deret 1 sampai N
+
+buku algoritma hal.159-160
+---------------------------------------------------------------------------------
+48.***************
+Hitung Rata-rata
+
+pengulangan
+-
+Int N, x, i, jumlah, rerata
+N, x, i, jumlah, rerata
+
+
+misalkan kita ingin menghitung nilai rata-rata dari N buah data bilangan bulat yang dibaca 
+dari keyboard. nilai rata-rata adalah jumlah seluruh data dibagi dengan banyaknya data. 
+misalkan jika N = 5 dan data bilangan yang dibaca berturut-turut adalah 12,10,6,2,4, maka
+nilai rata-ratanya adalah (12+10+6+2+4)/5 = 34/5 = 6.8
+
+buku algoritma hal.161
+-----------------------------------------------------------------------------------
+49.***************
+Peluncuran Roket
+
+pengulangan
+-
+Int i,p
+i,p
+
+
+sebuah roket diluncurkan dengan hitungan mundur, mulai dari 100,99,98,...,0. algoritma
+perhitungan mundur adalah
+
+buku algoritma hal.162
+--------------------------------------------------------------------------------------
+50.***************
+Penjumlahan Deret Pecahan
+
+pengulangan
+-
+Int x; Float s
+x,s
+
+misalkan jumlah deret adalah S. sebelum penjumlahan, S kita inisialisasi dengan 0. 
+setiap kali membaca x, harus diperiksa apakah x = 0. jika x = 0, maka proses pengulangan
+berhenti, tetapi jika tidak, maka jumlahkan S dengan 1/x
+
+buku algoritma hal.173
+--------------------------------------------------------------------------------------
+51.***************
+Hitung Rata-rata2
+
+pengulangan
+-
+Int x, i, jumlah; Float rerata; Varchar Fin
+i
+
+tulislah program untuk membaca data integer dari arsip dan menghitung nilai rata-rata
+seluruh data. keluaran program adalah nilai rata-rata tersebut. keluaran program dicetak 
+ke layar.
+buku algoritma hal.189
+---------------------------------------------------------------------------------
+52.
+Durasi Antara Dua Buah Jam
+
+pemilihan
+-
+Int hh,mm,ss
+hh,mm,ss
+
+seorang yang menelpon dari warung telekomunikasi (wartel) selalu dicatat jam awal percakapan
+dan jam akhir percakapan bicara (dalam format hh:mm:ss). tulislah algoritma yang membaca
+jam awal dan akhir percakapan, lalu menghitung lama percakapan dalam format waktu hh:mm:ss
+dengan cara analisis kasus. 
+
+buku algoritma hal 198
+-----------------------------------------------------------------------------------------
+53.
+Menentukan nilai terkecil
+
+pengulangan
+-
+Int N, x, min, i
+N, x, min, i
+
+tulislah algoritma untuk menentukan nilai terkecil dari N buahh data integer yang dibaca dari 
+keyboard nilai N dibaca terlebih dahulu(N>0) 
+
+buku algoritma hal 209
+---------------------------------------------------------------------------------------------------
+54.
+Aritmetika Pecahan
+
+pemilihan
+-
+Int a, b
+a, b, p1, p2, p3, pecahan
+
+nilai pecahan disajikan dalam bentuk a/b, dengan syarat b!=0. dalam hal ini, a disebut pembilang
+dan b penyebut. keduanya bertipe integer. bilangan bulat pun dapat dinyatakan dalam bentuk pecahan. 
+tulislah algoritma yang membaca dua buah nilai pecahan, p1 dan p2, lalu menghitung hasil penjumlahan 
+keduanya, selisih, perkalian, dan pembagian. hasil perhitungan tetap dalam bentuk pecahan. 
+
+buku algoritma hal 196
+----------------------------------------------------------------------------------------------
+55.
+Hari Berikutnya Pada Bulan Februari
+
+pemilihan
+-
+Int dd, mm, yy
+dd, mm, yy, Tanggal
+
+bulan februari mempunyai jumlah hari yang unik. jumlah harinya ada yang 28 hari. bulan februari mempunyai jumlah hari 
+29 bila berada pada tahun kabisat. pada tahun yang bukan kabisat, jumlah harinya 28. misalkan dibaca sebuah 
+penanggalan pada bulan februari. tulislah algoritma untuk menentukan tanggal pada hari berikutnya.
+
+buku algoritma hal 202
+------------------------------------------------------------------------------------
+56.
+Menghitung Jumlah Karakter
+
+pengulangan
+-
+Int ncc; char cc
+ncc, cc
+
+tulislah algoritma yang menghitung jumlah karakter yang dibaca secara berulang-ulang dari keyboard. 
+pembacaan karakter selesai jika karakter yang dibaca adalah karakter titik(tetapi titik tidak termasuk
+dalam hitungan jumlah karakter). misalnya jika karakter yang dibaca berturut-turut: 'a';'m'; 't';'.',
+maka kumlah karakter = 3 (tidak termasuk titik). 
+
+buku algoritma hal 207
+--------------------------------------------------------------------------------------
+57.
+Desimal ke biner
+
+pengulangan
+-
+Int x, sisa; String biner
+x, sisa, biner
+
+buatlah algoritma yang mengonversi bilangan bulat tidak-negatif dalam sistem desimal menjadi bilangan
+dalam sistem biner. misalnya 18 =10010
+
+buku algoritma hal 219
+---------------------------------------------------------------------------------------------
+58.
+Cetak Segitiga Bintang
+
+pengulangan
+-
+Int N, i, j
+N, i, j
+
+tulislah program untuk mencetak segitiga bintang berikut ini jika diberikan tinggi segitiga 
+adalah N (asumsikan N>0)
+
+buku algoritma hal 221
+--------------------------------------------------------------------------------------------
+59.***********************
+Cacah Jenis Karakter
+
+pengulangan
+-
+Int nangka, nspasi, nlainnya; char cc
+nangka, nspasi, nlainnya, cc
+
+tulislah algoritma yang menghitung jumlah kemunculan angka (digit), jumlah spasi, dan jumlah 
+karakter lainnya bila karakter dibaca secara berulang-ulang dari keyboard. Pembacaan karakter
+selesai jika karakter yang sibaca adalah karakter titik (tetapi titik tidak termasuk dalam
+hitungan jumlah karakter).
+
+buku algoritma hal 207
+--------------------------------------------------------------------------------------------
+60.***********************
+Cari Minimum2
+
+pengulangan
+-
+Int x, min
+x, min
+
+tulislah algoritma untuk menentukan nilai terkecil dari N buahh data integer yang dibaca dari 
+keyboard nilai N dibaca terlebih dahulu(N>0), tetapi banyaknya data tidak diketahui.
+pembacaan data terakhir bila data yang dibaca adalah 9999.
+
+buku algoritma hal 210
+---------------------------------------------------------------------------------
+61.************************
+Jumlah bilangan genap
+
+pengulangan
+-
+Int x, nx
+x, nx
+
+dibaca sejumlah bilangan bulat yang dibaca secara berulang-ulang, akhir pembacaan adalah 9999.
+tulislah algoritma untuk menghitung banyaknya bilangan genap.
+
+buku algoritma hal 211
+-------------------------------------------------------------------------------------
+62.***********************
+Lagu anak ayam
+
+pengulangan
+-
+Int N
+N
+
+tulislah algoritma untuk menuliskan teks lagu anak ayam turun N dengan N adalah jumlah anak
+ayam semula (Nilai N positif dan dibaca terlebih dahulu).
+
+buku algoritma hal 212
+-------------------------------------------------------------------------------------------
+63.***********************
+Penjumlahan deret pecahan
+
+pengulangan
+-
+Int N, i, p; Float jumlah
+N, i, j, humlah
+
+tulislah algoritma untuk menghitung jumlah deret pecahan N adalah bilangan bulat positif
+(dibaca terlebih dahulu)
+
+buku algoritma hal 213
+-------------------------------------------------------------------------------------------
+64.***********************
+Perpangkatan
+
+pengulangan
+-
+Int n, i; Float a, p
+n, i, a, p
+
+buatlah algoritma yang membaca a dan n bilangan bulat (n>=0) lalu untuk menghitung nilai
+perpangkatan a. perpangkatan a berarti mengalikan a sebanyak n kali.
+
+buku algoritma hal 214
+-------------------------------------------------------------------------------------------
+65.***********************
+Perpangkatan
+
+pengulangan
+-
+Int n, i, fak
+n, i, fak
+
+faktorial sebuah bilangan bulat tidak negatif n didefinisikan sebagai n! dan khusus untuk 
+n = 0, maka faktorial dari o didefinisikan sebagai o! = 1 tulislah algoritma yang membaca 
+nilai n dan menghitung faktorial n.
+
+buku algoritma hal 216
+-------------------------------------------------------------------------------------------
+66.***********************
+Nilai rata-rata setiap mahasiswa
+
+pengulangan
+-
+Int N, m, i,j; Float nilai, jumlah, rerata; String nama
+N, m, i,j, nilai, jumlah, rerata, nama
+
+jurusan tertentu di sebuah universitas mempunyai n orang mahasiswa. tiap mahasiswa mengambil
+m buah mata kuliah yang sama. tulislah algoritma yang membaca nama-nama mahasiswa beserta daftar
+nilai mata kuliah yang diambil (nilai bertipe riil), lalu menghitung rata-rata nilai setiap mahasiswa
+
+buku algoritma hal 217
+-------------------------------------------------------------------------------------------
+67.***********************
+Validasi Password
+
+pengulangan
+password = abc123
+String SandiLewat; boolean sah; int count
+SandiLewat, sah, count
+
+buatlah algoritma yang meniru mekanisme pembacaan sandi - lewat (password) untuk masuk ke
+sebuah sistem (ATM,Server, Reaktor nuklir, lemari besi dan sebagainya). apabila sandi - lewat
+yang dibaca salah, maka pembacaan sandi - lewat hanya boleh diulang maksimum 3 kali.
+sandi-lewat yang benar disimpan didalam algoritma sebagai konstanta (dalam praktek, sandi-lewat
+disimpan didalam basis data yang enkripsi untuk menjaga keamanannya).
+
+buku algoritma hal 218
+-------------------------------------------------------------------------------------------
+68.***********************
+Desimal Ke Biner
+
+pengulangan
+-
+Int x, sisa; String biner
+sisa, x, biner
+
+tulislah program untuk mencetak segitiga bintang berikut ini jika diberikan tinggi segitiga
+adalah N (asumsikan N > 0).
+
+buku algoritma hal 220
+-------------------------------------------------------------------------------------------
+69.***********************
+
+Misalkan A dan B adalah dua buah peubah yang bertipe integer. apa yang dilakukan oleh potongan 
+algoritma dibawah ini
+
+buku algoritma hal 95
+-------------------------------------------------------------------------------------------
+62.***********************
+
+
+buku algoritma hal 212
+-------------------------------------------------------------------------------------------
+62.***********************
+
+
+buku algoritma hal 212
+-------------------------------------------------------------------------------------------
+62.***********************
+
+
+buku algoritma hal 212
+-------------------------------------------------------------------------------------------
+

@@ -1,0 +1,3 @@
+menghitung n! untuk bilangan bulat tidak negatif
+
+hal 217
