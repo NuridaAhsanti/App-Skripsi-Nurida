@@ -1,0 +1,67 @@
+1.Uji Data Mahasiswa
+hitunglah jumlah nilai pendataan dari hasil pengujian kenaikkan suhu suatu zat yang 
+dilakukan oleh mahasiswa 
+
+
+2.Konversi Waktu
+dibaca durasi waktu dalam detik. tulislah algoritma untuk mengonversi durasi waktu tersebut ke dalam
+hari, jam, menit, detik 
+(Soal runtunan 110)
+
+
+3.Luas Bangun Geometri
+tulislah algoritma untuk menghitung luas bangun geometri yang lain (lingkaran, bujursangkar,
+segitiga, trapesium dan sebagainya). dan masukkan dibaca dari keyboard dan luas bangun ditampilkan 
+sebagai keluaran
+(Soal runtunan 109)
+
+
+4.Jarak Tanggal
+dibaca dua buah tanggal (dd:mm:yy). tulislah algoritma untuk menghitung berapa hari jarak kedua
+tanggal tersebut. asumsikan 1 tahun = 365 hari, 1 bulan = 30 hari. Keluaran (tahun, bulan, hari)
+ditampilkan ke layar.
+(Soal runtunan 110)
+
+
+5.Bilangan Bulat Positif
+buatlah algoritma yang membaca sebuah bilangan bulat positif lalu menetukan apakah bilangan
+tersebut merupakan kelipatan 4 
+(soal pemilihan 153)
+
+
+6.tiga buah bilangan bulat
+tulislah algoritma yang membaca tiga buah bilangan bulat, lalu mengurutkan tiga buah bilangan
+tersebut dari nilai yang kecil ke nilai yang besar. Keluaran adalah tiga buah bilangan terurut
+(soal pemilihan 153)
+
+
+7.panjang tiga buah sisi segitiga
+tulislah algoritma yang membaca panjang (integer) tiga buah sisi sebuah segitiga, a, b, dan c, yang
+dalam hal ini a<=b<=c, lalu menentukan apakah ketiga sisi tersebut membentuk segitiga siku-siku, 
+segitiga lancip, atau segitiga tumpul.Gunakan hukum Phytagoras)
+(soal pemilihan 153)
+
+
+8.jumlah N buah bilangan ganjil pertama
+buatlah algoritma untuk menghitung jumlah N buah bilangan ganjil pertama (yaitu, 1+3+5+...).
+catatan N adalah bilangan bulat tidak negatif
+(soal pengulangan 193)
+
+
+9.tuliskan program untuk mencetak gambar segitiga bintang sebanyak N baris, setiap baris ke-i berisi i buah bintang. 
+Nilai N dibaca dari keyboard.
+(soal pengulangan 193)
+
+
+10.Konversi bilangan bulat positif
+buatlah algoritma yang akan mengonversi bilangan bulat positif ke angka romawinya. 
+rancanglah algoritma tersebut sehingga pengonversian tersebut dapat dilakukan berulang kali
+sampai nilai nol dibaca dari keyboard.
+(soal pemilihan 194)
+
+11.membaca sembarang karakter
+buatlah algoritma yang membaca sembarang karakter dan mencetaknya ke layar. buatlah algoritma
+untuk dua kasus:
+jumlah karakter yang dibaca diketahui yaitu N buah (baca N terlebih dahulu)
+jumlah karakter yang dibaca tidak diketahui tetapi proses pembacaan berakhir jika karakter yang
+dimasukkan adalah karakter titik.

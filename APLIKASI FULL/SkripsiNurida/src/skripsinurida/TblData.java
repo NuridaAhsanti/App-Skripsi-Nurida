@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
@@ -14,14 +15,14 @@ import javax.swing.table.TableModel;
  * @author nury
  */
 public final class TblData extends javax.swing.JFrame {
+
     public TblData() {
         initComponents();
         tampilkandata();
     }
-
     public KoneksiDB connection = new KoneksiDB();
     private DefaultTableModel tabeldata = new DefaultTableModel();
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -122,7 +123,7 @@ public final class TblData extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void tampilkandata() {       
+    public void tampilkandata() {
         tabeldata.addColumn("ID");
         tabeldata.addColumn("Nama Program");
         tabeldata.addColumn("Kelas");
@@ -139,23 +140,23 @@ public final class TblData extends javax.swing.JFrame {
             ResultSet res = stat.executeQuery(sql);
             while (res.next()) {
                 tabeldata.addRow(new Object[]{
-                    res.getString(1),res.getString(2),res.getString(3),
-                    res.getString(4),res.getString(5),res.getString(6),
-                    res.getString(7),res.getString(8),res.getString(9),
-                    res.getString(10)
-                });
+                            res.getString(1), res.getString(2), res.getString(3),
+                            res.getString(4), res.getString(5), res.getString(6),
+                            res.getString(7), res.getString(8), res.getString(9),
+                            res.getString(10)
+                        });
             }
-           jTable1.setModel(tabeldata);
-           } catch (Exception e) {
+            jTable1.setModel(tabeldata);
+        } catch (Exception e) {
         }
     }
-   
-    private void transfer(){
+
+    private void transfer() {
         int index = jTable1.getSelectedRow();
-        if(index == -1){
+        if (index == -1) {
             new KelolaApp().show();
             this.dispose();
-        }else{
+        } else {
             KelolaApp kel = new KelolaApp();
             TableModel model = jTable1.getModel();
             String id = model.getValueAt(index, 0).toString();
@@ -165,12 +166,12 @@ public final class TblData extends javax.swing.JFrame {
             String tipe = model.getValueAt(index, 4).toString();
             String var = model.getValueAt(index, 5).toString();
             String soal = model.getValueAt(index, 7).toString();
-           
+
             kel.setVisible(true);
             kel.pack();
             kel.setLocationRelativeTo(null);
             kel.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-         
+
             kel.TFno.setText(id);
             kel.TFNamaKel.setText(nama);
             kel.CBKelas.setSelectedItem(kelas);
@@ -178,9 +179,9 @@ public final class TblData extends javax.swing.JFrame {
             kel.TFTipeKel.setText(tipe);
             kel.TFVarKel.setText(var);
             kel.TAKel.setText(soal);
-           
+
             try {
-                String sql = "select foto from appdb where autoid="+id;
+                String sql = "select foto from appdb where autoid=" + id;
                 Statement stat = connection.getKoneksi().createStatement();
                 ResultSet res = stat.executeQuery(sql);
                 while (res.next()) {
@@ -193,13 +194,14 @@ public final class TblData extends javax.swing.JFrame {
                 }
             } catch (SQLException ex) {
                 System.out.print("tidak dapat mengambil gambar");
+            } catch (NullPointerException e) {
+                JOptionPane.showConfirmDialog(null, "Pilih Data!", "Confirmation", JOptionPane.OK_OPTION);
             }
             this.dispose();
         }
     }
-  
-    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
 
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void jTable1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MousePressed
@@ -210,7 +212,7 @@ public final class TblData extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         new KelolaApp().show();
-       this.dispose();
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

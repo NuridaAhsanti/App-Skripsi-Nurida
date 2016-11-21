@@ -7,6 +7,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -378,7 +379,7 @@ public class CariJawaban extends javax.swing.JFrame {
                                     .addComponent(TipeAppKel)
                                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(TFVarCari, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(VarAppKel1))
@@ -389,15 +390,13 @@ public class CariJawaban extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 717, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 524, Short.MAX_VALUE)
+                .addGap(1, 1, 1))
         );
 
         pack();
@@ -658,10 +657,6 @@ public class CariJawaban extends javax.swing.JFrame {
         }
 
         String firstParam = buffer.toString();
-        String query1 = "ALTER TABLE appindex AUTO_INCREMENT = 1";
-        PreparedStatement preparedStmt1 = connection.getKoneksi().prepareStatement(query1);
-        preparedStmt1.executeUpdate();
-
         String query = "insert into appindex(Kata) values(?)";
         PreparedStatement preparedStmt = connection.getKoneksi().prepareStatement(query);
         preparedStmt.setString(1, firstParam);
@@ -1009,21 +1004,20 @@ public class CariJawaban extends javax.swing.JFrame {
         if (konf == 0) {
             try {
                 Statement st1 = connection.getKoneksi().createStatement();
-                String query1 = "SELECT nama, konst, tipe, var, foto, SimDocAkhir from appdb "
-                        + "inner join appindex on appdb.autoid = appindex.autoid ORDER BY SimDocAkhir";
+                String query1 = "SELECT foto FROM appbaru where nama = '"+TFNamaCari.getText()+"'";
                 ResultSet rs1 = st1.executeQuery(query1);
                 if (rs1.next()) {
-                    byte[] img = rs1.getBytes("foto");
+                    InputStream img = rs1.getBinaryStream("foto");
                     String query2 = "INSERT INTO appdb(nama, kelas, konst, tipe, var, kata, soal, foto, status) VALUES (?,?,?,?,?,?,?,?,?)";
                     PreparedStatement preparedStmt2 = connection.getKoneksi().prepareStatement(query2);
-                    preparedStmt2.setString(1, null);
+                    preparedStmt2.setString(1, "-");
                     preparedStmt2.setString(2, TFKelas.getText());
                     preparedStmt2.setString(3, TFKonstCari.getText());
                     preparedStmt2.setString(4, TFTipeCari.getText());
                     preparedStmt2.setString(5, TFVarCari.getText());
                     preparedStmt2.setString(6, null);
                     preparedStmt2.setString(7, TACari.getText());
-                    preparedStmt2.setBytes(8, img);
+                    preparedStmt2.setBinaryStream(8, img);
                     preparedStmt2.setString(9, "Belum Validasi");
                     preparedStmt2.executeUpdate();
                 }

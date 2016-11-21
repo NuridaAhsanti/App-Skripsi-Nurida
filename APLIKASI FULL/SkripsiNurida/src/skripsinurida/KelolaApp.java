@@ -367,12 +367,7 @@ public class KelolaApp extends javax.swing.JFrame {
                 PreparedStatement preparedStmt = connection.getKoneksi().prepareStatement(sql);
                 preparedStmt.executeUpdate();
                 JOptionPane.showMessageDialog(null, "Hapus Data Sukses!");
-                TFNamaKel.setText("");
-                TFKonstKel.setText("");
-                TFTipeKel.setText("");
-                TFVarKel.setText("");
-                TAKel.setText("");
-                LblFoto.setIcon(null);
+                new KelolaApp().show();
             } catch (SQLException | HeadlessException e) {
                 JOptionPane.showMessageDialog(null, "Hapus Data Gagal!");
             }
@@ -385,6 +380,7 @@ public class KelolaApp extends javax.swing.JFrame {
         TFKonstKel.setText("");
         TFTipeKel.setText("");
         TFVarKel.setText("");
+        TAKel.setText("");
         LblFoto.setIcon(null);
     }//GEN-LAST:event_BtnBatalActionPerformed
 
@@ -424,13 +420,18 @@ public class KelolaApp extends javax.swing.JFrame {
     }//GEN-LAST:event_TAKelTextValueChanged
 
     private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSimpanActionPerformed
-        try {
-            tokenisasi();
-            filterInsert(str);
-            JOptionPane.showMessageDialog(null, "Data disimpan!");
-            new KelolaApp().show();
-            this.dispose();
-        } catch (SQLException ex) {
+        if (LblFoto.getIcon() == null) {
+            JOptionPane.showConfirmDialog(null, "Masukkan gambar!", "Confirmation", JOptionPane.OK_OPTION);
+        } else {
+            try {
+                tokenisasi();
+                filterInsert(str);
+                JOptionPane.showMessageDialog(null, "Data disimpan!");
+                new KelolaApp().show();
+                this.dispose();
+            } catch (SQLException ex) {
+                JOptionPane.showConfirmDialog(null, "Masukkan gambar!", "Confirmation", JOptionPane.OK_OPTION);
+            }
         }
     }//GEN-LAST:event_BtnSimpanActionPerformed
 
@@ -544,10 +545,12 @@ public class KelolaApp extends javax.swing.JFrame {
             preparedStmt.setString(9, "Valid");
             preparedStmt.executeUpdate();
         } catch (FileNotFoundException ex) {
+            JOptionPane.showConfirmDialog(null, "Masukkan gambar!", "Confirmation", JOptionPane.OK_OPTION);
         }
         try {
             fis.close();
         } catch (IOException ex) {
+            JOptionPane.showConfirmDialog(null, "Masukkan gambar!", "Confirmation", JOptionPane.OK_OPTION);
         }
         return str;
     }
