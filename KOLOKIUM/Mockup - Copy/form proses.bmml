@@ -1,0 +1,77 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="995" measuredH="580" mockupW="716" mockupH="562">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="279" y="18" w="716" h="562" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>2</bottomheight>
+        <close>true</close>
+        <maximizeRestore>true</maximizeRestore>
+        <minimize>true</minimize>
+        <text>form%20Proses</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::DataGrid" x="296" y="104" w="225" h="461" measuredW="158" measuredH="383" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Term%2C%20TF%2C%20IDF%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923%0Aabc%2C%202%2C%200.038923</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="384" y="83" w="-1" h="-1" measuredW="50" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>TF-IDF</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Canvas" x="296" y="52" w="684" h="25" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="296" y="53" w="684" h="21" measuredW="69" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <size>16</size>
+        <text>PROSES</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::DataGrid" x="536" y="104" w="187" h="461" measuredW="107" measuredH="683" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ID%2C%20Similarity%0A1%2C%200.038923%0A2%2C%200.038923%0A3%2C%200.038923%0A4%2C%200.038923%0A5%2C%200.038923%0A6%2C%200.038923%0A7%2C%200.038923%0A8%2C%200.038923%0A9%2C%200.038923%0A10%2C%200.038923%0A11%2C%200.038923%0A12%2C%200.038923%0A13%2C%200.038923%0A14%2C%200.038923%0A15%2C%200.038923%0A16%2C%200.038923%0A17%2C%200.038923%0A18%2C%200.038923%0A19%2C%200.038923%0A20%2C%200.038923%0A21%2C%200.038923%0A12%2C%200.038923</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="505" y="104" w="-1" h="461" measuredW="16" measuredH="100" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="707" y="104" w="-1" h="461" measuredW="16" measuredH="100" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="574" y="82" w="105" h="22" measuredW="105" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Cosine%20Similarity</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::DataGrid" x="740" y="138" w="240" h="173" measuredW="119" measuredH="173" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ID%2C%20Klasifikasi%0A11%2C%20Pengurutan%0A20%2C%20Pengurutan%0A33%2C%20Pengurutan%0A14%2C%20Pengulangan%0A75%2C%20Pemilihan</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::DataGrid" x="740" y="340" w="240" h="110" measuredW="177" measuredH="113" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ID%2C%20Klasifikasi%2C%20Jumlah%0A11%2C%20Pengurutan%2C%203%0A14%2C%20Pengulangan%2C%201%0A75%2C%20Pemilihan%2C%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="796" y="116" w="105" h="22" measuredW="105" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>KNN%20dengan%20k%3D5</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="811" y="323" w="105" h="22" measuredW="65" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Vote%20KNN</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Canvas" x="740" y="472" w="240" h="70" measuredW="100" measuredH="70" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="740" y="492" w="240" h="29" measuredW="188" measuredH="22" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <size>14</size>
+        <text>Hasil%20Klasifikasi%20%3A%20Pengurutan</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

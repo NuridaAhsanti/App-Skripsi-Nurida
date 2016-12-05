@@ -1,0 +1,31 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="710" measuredH="271" mockupW="425" mockupH="255">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="285" y="16" w="425" h="255" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>3</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <minimize>true</minimize>
+        <text>form%20menu</text>
+        <topheight>26</topheight>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="417" y="159" w="-1" h="-1" measuredW="167" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Kelola%20Soal%20dan%20Jawaban</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="433" y="194" w="-1" h="-1" measuredW="140" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pencari%20Soal%20Serupa</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="329" y="67" w="333" h="53" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>18</size>
+        <text>Aplikasi%20Pencari%20Jawaban%20Soal%20Algoritma</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
